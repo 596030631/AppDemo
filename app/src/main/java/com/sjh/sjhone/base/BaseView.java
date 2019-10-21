@@ -6,4 +6,5 @@ package com.sjh.sjhone.base;
  * description:
  */
 public interface BaseView {
+
 }

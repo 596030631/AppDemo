@@ -1,7 +1,10 @@
-package com.sjh.sjhone.base;
+package com.sjh.sjhone.presenter.base;
 import androidx.lifecycle.LifecycleOwner;
 
 import com.sjh.baselibrary.util.Logger;
+import com.sjh.sjhone.base.BaseModel;
+import com.sjh.sjhone.base.BasePresenter;
+import com.sjh.sjhone.base.BaseView;
 
 import java.lang.ref.WeakReference;
 import static com.sjh.sjhone.App.MyApp;
@@ -16,12 +19,12 @@ public abstract class BasePresenterImpl<T extends BaseView,V extends BaseModel> 
         mModel = initModel();
     }
 
-    protected WeakReference<T> mViewRef;
-    protected void attachView(T view) {
+    public WeakReference<T> mViewRef;
+    public void attachView(T view) {
         mViewRef = new WeakReference<T>(view);
     }
 
-    protected void detachView(){
+    public void detachView(){
         if(mViewRef != null) {
             mViewRef.clear();
             mViewRef = null;
@@ -36,9 +39,11 @@ public abstract class BasePresenterImpl<T extends BaseView,V extends BaseModel> 
     }
 
     public abstract V initModel();
+    public abstract void initData();
 
     @Override
     public void onCreate(LifecycleOwner owner) {
+
         Logger.i(MyApp.getPackageName(),"------------------create------------------------");
     }
 

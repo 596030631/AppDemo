@@ -1,11 +1,23 @@
-<resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="toolBar_pop_item" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">60dp</item>
+        <item name="buttonGravity">center_vertical</item>
+    </style>
+    <style name="ImageButtonStyle" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+<!--    <style name="TextInputEditTextTheme" parent="Widget.Design.TextInputLayout">-->
+<!--        <item name="android:elevation" tools:targetApi="lollipop">2dp</item>-->
+<!--        <item name="boxBackgroundMode">filled</item>-->
+<!--    </style>-->
 
 </resources>

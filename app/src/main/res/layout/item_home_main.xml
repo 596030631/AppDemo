@@ -1,0 +1,64 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/news_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:text="来源"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorBlack"
+            android:text="2019-11-11 23:08"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:alpha="0.5"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/shape_circle_grey"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/imageIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/2"
+                android:textSize="10sp"
+                android:textColor="@android:color/white" />
+       </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="标题，简介军运会为啥没看到应该，澳大利亚？玩玩这些你得民法吧。"
+        android:textSize="15sp"/>
+</LinearLayout>
