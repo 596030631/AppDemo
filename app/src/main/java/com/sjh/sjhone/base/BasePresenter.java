@@ -11,6 +11,7 @@ import androidx.lifecycle.OnLifecycleEvent;
  * description:
  */
 public interface BasePresenter extends LifecycleObserver {
+
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     void onCreate(LifecycleOwner owner);
 
@@ -25,8 +26,5 @@ public interface BasePresenter extends LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     void onDestroy(LifecycleOwner owner);
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
-    void onLifecycliChanged(LifecycleOwner owner,Lifecycle.Event event);
 
 }

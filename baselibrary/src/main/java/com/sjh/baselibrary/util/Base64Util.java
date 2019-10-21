@@ -1,4 +1,4 @@
-package com.sjh.sjhone.baselibrary.util;
+package com.sjh.baselibrary.util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

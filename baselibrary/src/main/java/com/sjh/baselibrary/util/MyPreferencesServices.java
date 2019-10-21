@@ -1,4 +1,4 @@
-package com.sjh.sjhone.baselibrary.util;
+package com.sjh.baselibrary.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

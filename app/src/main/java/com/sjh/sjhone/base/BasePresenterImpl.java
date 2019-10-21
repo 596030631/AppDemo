@@ -1,8 +1,7 @@
 package com.sjh.sjhone.base;
-import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 
-import com.sjh.sjhone.baselibrary.util.Logger;
+import com.sjh.baselibrary.util.Logger;
 
 import java.lang.ref.WeakReference;
 import static com.sjh.sjhone.App.MyApp;
@@ -67,8 +66,4 @@ public abstract class BasePresenterImpl<T extends BaseView,V extends BaseModel> 
         Logger.i(MyApp.getPackageName(),"------------------destory------------------------");
     }
 
-    @Override
-    public void onLifecycliChanged(LifecycleOwner owner, Lifecycle.Event event) {
-        Logger.i(MyApp.getPackageName(),"------------------change------------------------");
-    }
 }

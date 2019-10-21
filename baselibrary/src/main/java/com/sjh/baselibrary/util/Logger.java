@@ -1,9 +1,7 @@
-package com.sjh.sjhone.baselibrary.util;
+package com.sjh.baselibrary.util;
 import android.content.ActivityNotFoundException;
 import android.database.sqlite.SQLiteFullException;
 import android.util.Log;
-
-import com.sjh.sjhone.App;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +13,7 @@ import java.net.MalformedURLException;
  */
 public class Logger {
 
-    public static boolean Debug = App.DEBUG;
+    public static boolean Debug = true;
 
     private static final String TAG = "MyLog";
 

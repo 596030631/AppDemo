@@ -2,7 +2,7 @@ package com.sjh.sjhone;
 
 import android.app.Application;
 
-import com.sjh.sjhone.baselibrary.util.ToastUtils;
+import com.sjh.baselibrary.util.ToastUtils;
 
 /**
  * date: 2019/10/16
