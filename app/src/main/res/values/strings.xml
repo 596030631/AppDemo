@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">演示App</string>
+    <string name="app_name">demo</string>
 
     <!-- Toast related -->
     <string name="toast_text_empty"> </string>

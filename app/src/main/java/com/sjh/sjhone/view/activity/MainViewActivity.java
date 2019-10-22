@@ -48,9 +48,9 @@ public class MainViewActivity extends BaseActivity<MainPresenterImpl> implements
 
 
     protected void initData() {
-        btnHome.setImageResource(R.mipmap.icon_home_press);
+        btnLove.setImageResource(R.mipmap.icon_love_press);
         fm = getSupportFragmentManager();
-        currentFragment = new FragmentHomeImpl();
+        currentFragment = new FragmentLoveImpl();
         FragmentTransaction transaction = fm.beginTransaction();
         transaction.add(R.id.fragment, currentFragment).commit();
         transaction.show(currentFragment);

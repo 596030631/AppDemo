@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * date: 2019/10/19
  * author:SJH
- * description:
+ * description: http reuqest
  */
 public class NetUtil {
     public static BaseBean<BaseObjectBean<TouTiaoBean>> getNews(Map<String,String> params1, Observer<BaseBean<BaseObjectBean<TouTiaoBean>>> observer){
